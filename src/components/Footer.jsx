@@ -49,6 +49,7 @@ export default function () {
             </div>
 
             <div class="text-center text-xs text-slate-500 py-4">© <span id="year"></span> Digital Arts Academy MW — All rights reserved</div>
-        </footer>
+            
+                    </footer>
     )
 }

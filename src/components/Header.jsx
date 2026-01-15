@@ -75,7 +75,7 @@ export default function Header({pageNmae, data}){
            }
             return(
                 <div className="relative isolate bg-gradient-to-b from-black/30 to-white/20 w-full min-h-[95vh] md:min-h-[80vh] lg:min-h-[75vh] ">
-                     <img src='/images/Hero Images/student1.jpg' alt="" className="absolute inset-0 object-cover w-full h-full mix-blend-overlay "/>
+                     <img src='./images/hero images/student1.jpg' alt="" className="absolute inset-0 object-cover w-full h-full mix-blend-overlay "/>
                      <div className=" relative z-10 max-w-6xl mx-auto px-5 py-24 md:py-28 lg:py-32 flex flex-col md:flex-row md:items-center gap-10">
                          <div className="text-white space-y-4">
                             <p className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/15 text-xs uppercase tracking-wide">{courseHeaderObj.cohortText}</p>

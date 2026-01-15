@@ -6,7 +6,7 @@ export default function Coursetrack({badges, courseImg, title, description, take
     return (
         <article id="drawing" class="course-card bg-bgSecondary rounded-xl shadow hover:shadow-lg p-5 border border-borderColor">
           <div class="relative h-40 rounded-md overflow-hidden bg-slate-900">
-            <img src={`./public/images/${courseImg}`} alt="Digital drawing students" class="w-full h-full object-cover opacity-90"></img>
+            <img src={`./images/${courseImg}`} alt="Digital drawing students" class="w-full h-full object-cover opacity-90"></img>
             <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-black/70"></div>
             <div class="absolute inset-0 flex items-start justify-between p-3 text-white">
               <span class="px-3 py-1 rounded-full bg-indigo-500/90 text-xs font-semibold">{badges.duration} weeks</span>
