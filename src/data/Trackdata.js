@@ -1,7 +1,13 @@
+
+import digitalArts from "../assets/courseimages/DigitalArt.jpeg"
+import threeDArt from "../assets/courseimages/3DArt.png"
+import gameDev from "../assets/courseimages/GameDev.jpg"
+
+
 export default [
     {
         id: 11,
-        courseImg: "DigitalArt.jpeg",
+        courseImg: digitalArts,
         title: "Digital Drawing & Illustration",
         info: {
             description: "Shape, color, lighting, and storytelling with Krita / Procreate workflows.",
@@ -19,7 +25,7 @@ export default [
     },
     {
         id: 12,
-        courseImg: "3DArt.png",
+        courseImg: threeDArt,
         title: "3D Modelling with Blender",
         info: {
             description: "Model props and stylized characters, UV unwrap, light, and render portfolio pieces.",
@@ -37,7 +43,7 @@ export default [
     },
     {
         id: 13,
-        courseImg: "GameDev.jpg",
+        courseImg: gameDev,
         title: "Game Development (Godot / Unreal)",
         info: {
             description: "Pick an engine, build a playable micro-game, and publish a web or PC prototype.",
