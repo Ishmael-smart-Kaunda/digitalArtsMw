@@ -17,9 +17,10 @@ export default function Navbar() {
                                     </Link>
                             )
     const [open, setOpen]=useState(false)
-    const [theme, setTheme]=useState(localStorage.getItem('theme'))
+    const [theme, setTheme]=useState(localStorage.getItem('theme') || 'light')
 
     function toggleTheme(){
+        console.log('toggle theme button clicked')
         if(theme==='light'){
             setTheme('dark')
         }

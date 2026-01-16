@@ -15,8 +15,8 @@ export default function Header({pageNmae, data}){
 
   const heroImages=[
                {src: student1, alt:'student 1'},
-               {src: student2, alt:'student 1'},
-               {src:student3, alt:'student 1'},
+               {src: student2, alt:'student 2'},
+               {src:student3, alt:'student 3'},
               ]
   
     const homeHeaderObj=data[0]
@@ -46,7 +46,7 @@ export default function Header({pageNmae, data}){
               const intervalId=setInterval(handleNext,10000)
               return ()=>clearInterval(intervalId)
           },[])
-     
+    
 
     if(pageNmae==='home'){
          return(
