@@ -43,7 +43,7 @@ export default function Navbar() {
 
     return(
             <>
-                <header className={`fixed top-0 left-0 right-0 z-50 bg-bgPrimary backdrop-blur-sm shadow-sm ${theme==='dark'? 'border-b border-white/8': 'border-b border-white/3'}`}>
+                <header className={`sticky top-0 left-0 right-0 z-50 relative bg-bgPrimary backdrop-blur-sm shadow-sm ${theme==='dark'? 'border-b border-white/8': 'border-b border-white/3'}`}>
                     <div className="max-w-6xl mx-auto flex items-center justify-between px-5 py-3">
                         <a href="index.html" className="flex items-center gap-3">
                             <img src={Logo} alt="Digital Arts Academy MW logo" className="w-10 h-10 rounded-md object-contain ring-2 ring-black/10 bg-white"></img>
@@ -59,7 +59,7 @@ export default function Navbar() {
 
                         {/* navigation menu for mobile devices */}
                         {open && (
-                            <nav className={`md:hidden flex flex-col items-center gap-1 absolute ${theme==='dark'? 'border-b border-white/10': ''} top-15 left-0 transition px-5 py-4 space-y-2 bg-white/70 backdrop-blur-sm shadow-sm w-full transition-colors duration-300`}>
+                            <nav className={`md:hidden flex flex-col items-center gap-1 absolute top-full ${theme==='dark'? 'border-b border-white/10 bg-slate-900': 'bg-white/70 '} left-0 transition px-5 py-4 space-y-2  backdrop-blur-sm shadow-sm w-full transition-colors duration-300`}>
                               {Links}
                             </nav>
                           )

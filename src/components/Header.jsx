@@ -20,7 +20,6 @@ export default function Header({pageNmae, data}){
               ]
   
     const homeHeaderObj=data[0]
-    const slideImgs=data[1].slideImages
     const courseHeaderObj=data[2]
 
      const [index, setIndex]=useState(0)
