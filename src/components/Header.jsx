@@ -2,25 +2,35 @@ import headerData from "../data/headerData";
 import SignUpForm from "./home_components/signUpform";
 import Banner from "./courses_components/Digital_arts_banner";
 
-import students from "../assets/students.jpg"
+
+import student1 from "../assets/heroimages/student1.jpg"
+import student2 from "../assets/heroimages/student2.webp"
+import student3 from "../assets/heroimages/student3.jpg"
+
 import { useEffect, useState } from "react";
 
 
 
 export default function Header({pageNmae, data}){
 
+  const heroImages=[
+               {src: student1, alt:'student 1'},
+               {src: student2, alt:'student 1'},
+               {src:student3, alt:'student 1'},
+              ]
+  
     const homeHeaderObj=data[0]
     const slideImgs=data[1].slideImages
     const courseHeaderObj=data[2]
 
      const [index, setIndex]=useState(0)
-     let imgSrc=slideImgs[index].src
-     let imgAlt=slideImgs[index].alt
+     let imgSrc=heroImages[index].src
+     let imgAlt=heroImages[index].alt
 
-     const slideDots =slideImgs.map((dot, i)=>{return <span className={` size-4 rounded-full ${i===index ? 'bg-amber-600': 'bg-white transition-colors 200'} `}></span>})
+     const slideDots =heroImages.map((dot, i)=>{return <span className={` size-4 rounded-full ${i===index ? 'bg-amber-600': 'bg-white transition-colors 200'} `}></span>})
      {/*next index */}
      function getNextIndex(prevIndex){
-         return(prevIndex+1)%slideImgs.length
+         return(prevIndex+1)%heroImages.length
      }
 
      {/* next images */}
@@ -29,7 +39,7 @@ export default function Header({pageNmae, data}){
      }
      //to be added if needed
      function handlePrev(){
-         setIndex((prevI)=>(prevI-1 + slideImgs.length)% slideImgs.length)
+         setIndex((prevI)=>(prevI-1 + heroImages.length)% heroImages.length)
      }
     
      useEffect(()=>{
@@ -77,7 +87,7 @@ export default function Header({pageNmae, data}){
            }
             return(
                 <div className="relative isolate bg-gradient-to-b from-black/30 to-white/20 w-full min-h-[95vh] md:min-h-[80vh] lg:min-h-[75vh] ">
-                     <img src={students} alt="" className="absolute inset-0 object-cover w-full h-full mix-blend-overlay "/>
+                     <img src={student1} alt="" className="absolute inset-0 object-cover w-full h-full mix-blend-overlay "/>
                      <div className=" relative z-10 max-w-6xl mx-auto px-5 py-24 md:py-28 lg:py-32 flex flex-col md:flex-row md:items-center gap-10">
                          <div className="text-white space-y-4">
                             <p className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/15 text-xs uppercase tracking-wide">{courseHeaderObj.cohortText}</p>
