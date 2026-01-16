@@ -4,7 +4,7 @@ export default function Courses({data}) {
         
         <article class=" course-card bg-bgSecondary rounded-xl shadow hover:shadow-lg  p-5">
                     <div class="relative h-40 rounded-md overflow-hidden ">
-                        <img src={`./images/${data.courseImg}`} class="w-full h-full object-cover opacity-90"></img>
+                        <img src={`./images/heroImages/${data.courseImg}`} class="w-full h-full object-cover opacity-90"></img>
                         <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/60"></div>
                         <div class="absolute inset-0 flex items-center justify-center text-white font-bold text-xl drop-shadow">
                             {data.caption}

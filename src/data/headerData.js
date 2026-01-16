@@ -17,13 +17,13 @@ export default[
                },
                {
                   slideImages:[
-                    {src: './images/hero images/student1.jpg',
+                    {src: './images/heroImages/student1.jpg',
                      alt: 'student one '
                     },
-                    {src: './images/hero images/student2.webp',
+                    {src: './images/heroImages/student2.webp',
                      alt:'student two'
                     },
-                    {src: './images/hero images/student3.jpg',
+                    {src: './images/heroImages/student3.jpg',
                      alt:'student 3'
                     }
                   ]
