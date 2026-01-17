@@ -94,8 +94,8 @@ export default function Header({pageNmae, data}){
                             <p className="text-lg text-slate-100/90 max-w-xl">{courseHeaderObj.courseProcess}</p>
 
                             <div className="flex flex-wrap gap-3">
-                                  <a href="#tracks" className="px-5 py-3 rounded-md bg-indigo-500 hover:bg-indigo-600 shadow-lg text-white font-semibold hero-button">{courseHeaderObj.buttons.exploreBtn}</a>
-                                  <a href="contact.html" className="px-5 py-3 rounded-md border border-white/40 text-white hover:bg-white/10 hero-button-outline">{courseHeaderObj.buttons.joinBtn}</a>
+                                  <a href="/" className="px-5 py-3 rounded-md bg-indigo-500 hover:bg-indigo-600 shadow-lg text-white font-semibold hero-button">{courseHeaderObj.buttons.exploreBtn}</a>
+                                  <a href="/" className="px-5 py-3 rounded-md border border-white/40 text-white hover:bg-white/10 hero-button-outline">{courseHeaderObj.buttons.joinBtn}</a>
                             </div>
                            </div>
                     <Banner data={headerData}/>   

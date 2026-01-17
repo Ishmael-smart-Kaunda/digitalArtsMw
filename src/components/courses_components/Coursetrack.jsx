@@ -4,7 +4,7 @@
 
 export default function Coursetrack({badges, courseImg, title, description, takeAways, tools}) {
     return (
-        <article id="drawing" class="course-card bg-bgSecondary rounded-xl shadow hover:shadow-lg p-5 border border-borderColor">
+        <article id="track" class="course-card bg-bgSecondary rounded-xl shadow hover:shadow-lg p-5 border border-borderColor">
           <div class="relative h-40 rounded-md overflow-hidden bg-slate-900">
             <img src={courseImg} alt="Digital drawing students" class="w-full h-full object-cover opacity-90"></img>
             <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-black/70"></div>
@@ -22,7 +22,7 @@ export default function Coursetrack({badges, courseImg, title, description, take
           </ul>
           <div class="mt-4 flex items-center justify-between text-xs text-slate-500">
             <span>Tools: {tools} </span>
-            <a href="index.html#courses" class="text-indigo-600 font-semibold">Preview</a>
+            <a href="/" class="text-indigo-600 font-semibold">Preview</a>
           </div>
         </article>
     )

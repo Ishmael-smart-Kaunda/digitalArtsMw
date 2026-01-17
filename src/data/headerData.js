@@ -3,12 +3,12 @@
 export default[
                 {
                    orgName:'Digital Arts Academy',
-                   Logo:'MW',
+                   Logo:' MW',
                    courseDescript:'Empowering Malawian creatives with skills in ',
                    courses:{
-                       drawing:'digital drawing',
-                       modelling:'3D modelling',
-                       game:'game development',
+                       drawing:' Digital drawing ',
+                       modelling:' 3D modelling ',
+                       game:' Game development',
                    },
                    buttons:{
                       exploreBtn:'Explore Courses',
