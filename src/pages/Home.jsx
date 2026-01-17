@@ -34,7 +34,7 @@ export default function Home() {
              <div id="courses" className="max-w-6xl mx-auto px-5 bg-bgPrimary">
                 <div className="flex items-center justify-between mb-8 ">
                 <h3 className="text-2xl text-primaryText font-bold">Core Courses</h3>
-                <a href="courses.html" className="text-indigo-600 hover:underline">View all courses →</a>
+                <a href="#courses" className="text-indigo-600 hover:underline">View all courses →</a>
                 </div>
         
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 ">

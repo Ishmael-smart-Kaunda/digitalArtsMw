@@ -1,7 +1,7 @@
 
 
 export default function Banner({data}){
-        const bannerData=data[3].reasons
+        const bannerData=data[2].reasons
         return(
         <div className="bg-white/90 backdrop-blur-lg rounded-2xl shadow-xl p-6 space-y-4">
           <div className="flex items-center gap-3">

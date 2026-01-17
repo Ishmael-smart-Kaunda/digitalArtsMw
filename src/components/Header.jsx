@@ -20,13 +20,13 @@ export default function Header({pageNmae, data}){
               ]
   
     const homeHeaderObj=data[0]
-    const courseHeaderObj=data[2]
+    const courseHeaderObj=data[1]
 
      const [index, setIndex]=useState(0)
      let imgSrc=heroImages[index].src
      let imgAlt=heroImages[index].alt
 
-     const slideDots =heroImages.map((dot, i)=>{return <span className={` size-4 rounded-full ${i===index ? 'bg-amber-600': 'bg-white transition-colors 200'} `}></span>})
+     const slideDots =heroImages.map((dot, i)=>{return <span className={` size-3 rounded-full ${i===index ? 'bg-amber-600/50': 'bg-white/50 transition-colors 200'} `}></span>})
      {/*next index */}
      function getNextIndex(prevIndex){
          return(prevIndex+1)%heroImages.length
@@ -59,7 +59,7 @@ export default function Header({pageNmae, data}){
                     <p className="text-lg md:text-xl max-w-xl drop-shadow mx-auto md:mx-0">
                       {homeHeaderObj.courseDescript} 
                       <strong>{homeHeaderObj.courses.drawing}</strong>, 
-                      <strong>{homeHeaderObj.courses.modelling}</strong>, and 
+                      <strong>{homeHeaderObj.courses.modelling}</strong> , and 
                       <strong>{homeHeaderObj.courses.game}</strong>.
                     </p>
 
@@ -67,7 +67,7 @@ export default function Header({pageNmae, data}){
                       <a href="#courses" className="inline-flex items-center gap-2 px-5 py-3 rounded-md bg-indigo-600 hover:bg-indigo-700 text-white shadow-lg">
                         {homeHeaderObj.buttons.exploreBtn}
                       </a>
-                      <a href="contact.html" className="inline-flex items-center gap-2 px-5 py-3 rounded-md border border-white/30 text-white/90 backdrop-blur-sm">
+                      <a href="#contact" className="inline-flex items-center gap-2 px-5 py-3 rounded-md border border-white/30 text-white/90 backdrop-blur-sm">
                         {homeHeaderObj.buttons.joinBtn}
                       </a>
                     </div>

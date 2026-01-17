@@ -24,7 +24,7 @@ export default function Teamdeets() {
             </div>
 
             <div class="mt-8">
-            <a href="contact.html" class="text-indigo-600">Apply to join the team →</a>
+            <a href="#contact" class="text-indigo-600">Apply to join the team →</a>
             </div>
         </main>
     )

@@ -16,19 +16,6 @@ export default[
                    }
                },
                {
-                  slideImages:[
-                    {src: '/images/heroImages/student1.jpg',
-                     alt: 'student one '
-                    },
-                    {src: '/images/heroImages/student2.webp',
-                     alt:'student two'
-                    },
-                    {src: '/images/heroImages/student3.jpg',
-                     alt:'student 3'
-                    }
-                  ]
-               },
-               {
                    cohortText:'2026 PILOT COHORT',
                    coursesDesign:'Hands-on courses designed for Malawian creatives',
                    courseProcess:'Pick a track, build a real project, and leave with portfolio piece you can show employers or clients.',

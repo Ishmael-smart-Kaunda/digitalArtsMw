@@ -34,9 +34,10 @@ export default function () {
                 <div>
                 <h5 class="font-semibold">Quick links</h5>
                 <ul class="w-1/2 md:w-[fit-content] mt-3 text-sm text-slate-300 space-y-2">
+                    <li className="hover:text-indigo-300 "><a href="/">Home</a></li>
                     <li className="hover:text-indigo-300 "><a href="#courses">Courses</a></li>
-                    <li className="hover:text-indigo-300 " ><a href="team.html">Team</a></li>
-                    <li className="hover:text-indigo-300 " ><a href="contact.html">Contact</a></li>
+                    <li className="hover:text-indigo-300 " ><a href="#team">Team</a></li>
+                    <li className="hover:text-indigo-300 " ><a href="#contact">Contact</a></li>
                 </ul>
                 </div>
 

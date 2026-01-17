@@ -13,9 +13,9 @@ export default function CallAction({pageName}){
                     <h3 className="text-2xl font-bold">{homeActions.heading}</h3>
                     <p className="mt-2 text-sm">{homeActions. descript}</p>
                 </div>
-                  <div className="flex items-center md:flex-nowrap gap-3">
-                    <a href="contact.html" className="px-4 py-3 whitespace-nowrap text-center w-1/2 bg-white/20 rounded-md hover:bg-white/30">{homeActions.buttons.applyBtn}</a>
-                    <a href="#signup-form" className="px-4 py-3 whitespace-nowrap text-center w-1/2 bg-black/10 rounded-md hover:bg-black/20">{homeActions.buttons.seatReserveBtn}</a>
+                  <div className="flex items-center flex-wrap md:flex-nowrap gap-3">
+                    <a href="#contact" className="px-4 py-3 whitespace-nowrap text-center w-full md:w-[fit content] text-center bg-white/20 rounded-md hover:bg-white/30">{homeActions.buttons.applyBtn}</a>
+                    <a href="/" className="px-4 py-3 whitespace-nowrap text-center w-full md:w-[fit content] text-center bg-black/10 rounded-md hover:bg-black/20">{homeActions.buttons.seatReserveBtn}</a>
                   </div>
                 </div>
              </section>
@@ -29,9 +29,9 @@ export default function CallAction({pageName}){
                       <h3 class="text-2xl font-bold mt-1">{courseActions.heading}</h3>
                       <p class="text-sm text-white/90 mt-2">{courseActions.descript}</p>
                     </div>
-                    <div class="flex items-center gap-3">
-                      <a href="contact.html" class="px-5 py-3 whitespace-nowrap rounded-md bg-white text-indigo-700 font-semibold shadow">{courseActions.buttons.seatReserveBtn}</a>
-                      <a href="index.html" class="px-5 py-3 whitespace-nowrap w-[155px] rounded-md border border-white/40 text-white/90 hover:bg-white/10">{courseActions.buttons.backHomeBtn}</a>
+                    <div class="flex items-center gap-3 flex-wrap  md:flex-nowrap">
+                      <a href="#contact" class="px-5 py-3 whitespace-nowrap w-full md:w-[fit content] text-center rounded-md bg-white text-indigo-700 font-semibold shadow">{courseActions.buttons.seatReserveBtn}</a>
+                      <a href="/" class="px-5 py-3 whitespace-nowrap w-full md:w-[fit content] text-center rounded-md border border-white/40 text-white/90 hover:bg-white/10">{courseActions.buttons.backHomeBtn}</a>
                     </div>
                 </div>
               </section>

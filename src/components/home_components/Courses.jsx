@@ -14,7 +14,7 @@ export default function Courses({data}) {
                     <p class="mt-2 text-sm text-secondaryText">{data.courseDesc}</p>
                     <div class="mt-4 flex items-center justify-between">
                         <span class="text-xs text-slate-400">Duration: {data.duration} weeks</span>
-                        <a href="courses.html#drawing" class="text-indigo-600 text-sm">Learn more</a>
+                        <a href="#courses" class="text-indigo-600 text-sm">Learn more</a>
                     </div>
                 </article>
     )

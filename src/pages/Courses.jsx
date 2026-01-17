@@ -42,7 +42,7 @@ export default function Courses() {
                     <h2 className="text-2xl text-primaryText md:text-3xl font-bold ">Course tracks</h2>
                     <p className="text-secondaryText mt-1 ">Structured, practical programs with a tangible deliverable.</p>
                     </div>
-                    <a href="contact.html" className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-md bg-indigo-600 text-white text-sm hover:bg-indigo-700 ">Talk to us</a>
+                    <a href="#contact" className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-md bg-indigo-600 text-white text-sm hover:bg-indigo-700 ">Talk to us</a>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
