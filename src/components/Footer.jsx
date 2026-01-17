@@ -8,6 +8,7 @@ export default function () {
                     <h4 class="font-bold">Digital Arts Academy MW</h4>
                     <p class="mt-2 text-sm text-slate-300">Creating opportunities for Malawian creatives.</p>
                     <p class="mt-3 text-xs text-slate-400">Habakkuk 2:2 • Philippians 4:13</p>
+                   
                     <div className="mt-3">
                     <h5 class="font-semibold">Quick links</h5>
                     <ul class="w-1/2 md:w-[fit-content] mt-3 text-sm text-slate-300 space-y-2">
@@ -17,25 +18,24 @@ export default function () {
                         <li className="hover:text-indigo-300 " ><a href="#contact">Contact</a></li>
                     </ul>
                     </div>
-
                 </div>
 
-                <div>
-                <div>
-                <h5 class="font-semibold">Contact Us</h5>
-                <address className="flex flex-col gap-1 mt-2">
-                  <span className="flex flex-row items-center gap-2 ">
-                    <p> Phone : </p>
-                    <a href="tel: +265890361889" className="text-amber-100 text-sm"> +265 890361889</a>  
-                  </span> 
+                <div className="-mt-2">
+                  <div>
+                    <h5 class="font-semibold">Contact Us</h5>
+                    <address className="flex flex-col gap-1 mt-2">
+                    <span className="flex flex-row items-center gap-2 ">
+                        <p> Phone : </p>
+                        <a href="tel: +265890361889" className="text-amber-100 text-sm"> +265 890361889</a>  
+                    </span> 
 
-                   <span className="flex flex-row items-center gap-2">
-                    <p>Email : </p>
-                    <a href="mailto:digitalartsacademymw.register@gmail.com " className="text-amber-100 text-sm">digitalartsacademymw.register@gmail.com</a>
-                  </span>   
-                </address>
-                </div>
-                    <article className="mt-5 py-2" >
+                    <span className="flex flex-row items-center gap-2">
+                        <p>Email : </p>
+                        <a href="mailto:digitalartsacademymw.register@gmail.com " className="text-amber-100 text-sm">digitalartsacademymw.register@gmail.com</a>
+                    </span>   
+                    </address>
+                  </div>
+                    <article className="mt-2 py-2" >
                     <h5 className="font-semibold">Follow Us</h5>
                     <div  className="mt-3 flex flex-row items-center gap-4">
                         <a href="https://web.facebook.com/profile.php?id=61586510541142" >
@@ -55,7 +55,10 @@ export default function () {
                 </article>
                 </div>
                 
-                <div className=" w-full h-[200px] md:w-[300px] bg-white text-slate-900 items-center">LOCATION MAP</div>
+                <div className=" w-full h-[200px] md:w-[300px] bg-white/40 text-slate-100 flex items-center justify-center text-lg"> 
+                <h1>MAPS</h1>
+                
+                </div>
                  
                  
                 
