@@ -56,7 +56,7 @@ export default function Courses() {
             
            
 
-            <section class="w-full px-6 py-12">
+            <section className="w-full px-6 py-12">
                 <CallAction pageName='course' />
              </section>
 

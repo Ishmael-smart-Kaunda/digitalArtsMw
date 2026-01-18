@@ -45,13 +45,13 @@ export default function Navbar() {
             <>
                 <header className={`sticky top-0 left-0 right-0 z-50 relative bg-bgPrimary backdrop-blur-sm shadow-sm ${theme==='dark'? 'border-b border-white/8': 'border-b border-white/3'}`}>
                     <div className="max-w-6xl mx-auto flex items-center justify-between px-5 py-3">
-                        <a href="index.html" className="flex items-center gap-3">
+                        <span className="flex items-center gap-3">
                             <img src={Logo} alt="Digital Arts Academy MW logo" className="w-10 h-10 rounded-md object-contain ring-2 ring-black/10 bg-white"></img>
                             <div>
                              <h1 className="text-lg text-primaryText font-bold transition-colors duration-300">Digital Arts Academy <span className="text-sm font-semibold text-slate-500">MW</span></h1>
                              <p className="text-xs text-slate-500 -mt-1">Create • Learn • Shine</p>
                             </div>
-                        </a>
+                        </span>
                         {/* Navigation on wider screen */}
                         <nav className="hidden md:flex items-center gap-4">
                               {Links}
@@ -69,7 +69,7 @@ export default function Navbar() {
                            { theme==='light' ?<FiMoon />:<FiSun className="text-white"/> }
                       </button>
 
-                        <div class="md:hidden flex items-center gap-2">
+                        <div className="md:hidden flex items-center gap-2">
                             <button onClick={toggleTheme} id="dark-toggle-mobile" className={`p-2 rounded-md ring-1 ring-slate-600 ${theme==='dark' ?'hover:bg-slate-700 ring-slate-100 transition-colors duration-300':''} hover:bg-slate-100 transition-colors duration-300`} aria-label="Toggle dark mode">
                               { theme==='light' ?<FiMoon />:<FiSun className="text-white" /> }
                             </button>
