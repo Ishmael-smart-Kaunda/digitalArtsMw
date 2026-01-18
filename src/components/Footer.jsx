@@ -10,7 +10,7 @@ export default function () {
 
     return (
         <footer className="bg-[#020617] text-white border-t border-white/10">
-            <div className="max-w-6xl mx-auto px-5 py-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="max-w-6xl mx-auto px-5 py-10 flex flex-wrap gap-6">
                 <div>
                     <h4 className="font-bold">Digital Arts Academy MW</h4>
                     <p className="mt-2 text-sm text-slate-300">Creating opportunities for Malawian creatives.</p>
