@@ -1,7 +1,7 @@
 
 import video3D from '../assets/videos/3D rendering/3D.mp4'
 import drawingVideo from '../assets/videos/Sketching/sketching.mp4'
-import gameVideo from '../assets/videos/game videos/game.MP4'
+import gameVideo from '../assets/videos/game videos/game.mp4'
 
 export default  [     
                     {
