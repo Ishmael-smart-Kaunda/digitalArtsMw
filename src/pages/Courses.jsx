@@ -26,6 +26,7 @@ export default function Courses() {
             takeAways = {track.info.takeAways}
             tools = {track.tools}
             badges = {track.bagdes}
+            pathname ={track.pathname}
         />
     })
 

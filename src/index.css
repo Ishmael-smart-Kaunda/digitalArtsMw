@@ -83,3 +83,11 @@ body{
 *{
     transition: all 0.3s;
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scrollbar-thin::-webkit-scrollbar{
+    height: 1px;
+    
+}

@@ -52,7 +52,7 @@ export default function Form() {
         };
 
     return(
-        <form id="contact-form" class="grid grid-cols-1 md:grid-cols-2 gap-4" onSubmit={sendEmail}>
+        <form id="contact-form" className="grid grid-cols-1 md:grid-cols-2 gap-4" onSubmit={sendEmail}>
             <input 
                 type="text"
                 name="user_name" 
@@ -82,7 +82,7 @@ export default function Form() {
             />
             <select 
                 name="interest" 
-                className="p-3 border rounded-md border-inputBorder rounded-md placeholder: text-placeholder bg-bgSecondary focus:outline-none"
+                className="p-3 border rounded-md border-inputBorder rounded-md placeholder:text-placeholder bg-bgSecondary focus:outline-none"
                 value={userCredentials.interest}
                 onChange={handleChange}
                 required
@@ -101,7 +101,7 @@ export default function Form() {
             >
             </textarea>
             <div className="md:col-span-2 flex gap-4">
-                <button class="px-4 py-3 bg-indigo-600 text-white rounded-md">Send Application</button>
+                <button className="px-4 py-3 bg-indigo-600 text-white rounded-md">Send Application</button>
                 <a href="index.html" className="px-4 py-3 border rounded-md border-borderColor text-primaryText">Back</a>
             </div>
         </form>

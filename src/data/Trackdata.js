@@ -21,7 +21,8 @@ export default [
             duration: 4,
             type: "Beginner → Intermediate"
         },
-        tools: "Krita, Photopea, Procreate"
+        tools: "Krita, Photopea, Procreate",
+        pathname:"#sketching"
     },
     {
         id: 12,
@@ -39,7 +40,8 @@ export default [
             duration: "6",
             type: "Hands-on"
         },
-        tools: "Blender, Substance alternatives"
+        tools: "Blender, Substance alternatives",
+        pathname:"#modelling"
     },
     {
         id: 13,
@@ -57,6 +59,7 @@ export default [
             duration: "8",
             type: "Project-based"
         },
-        tools: "Godot or Unreal (you choose)"
+        tools: "Godot or Unreal (you choose)",
+        pathname:"#gameDevelopment"
     }
 ]

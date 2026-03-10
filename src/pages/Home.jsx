@@ -56,7 +56,7 @@ export default function Home() {
                  </div>
                 </div>
             </section>
-             
+           
              <section className="w-full px-5 py-12 bg-bgPrimary">
                  <CallAction pageName='home' />
              </section>

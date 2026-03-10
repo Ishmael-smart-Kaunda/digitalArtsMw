@@ -45,8 +45,9 @@ export default function Navbar() {
             <>
                 <header className={`sticky top-0 left-0 right-0 z-50 relative bg-bgPrimary backdrop-blur-sm shadow-sm ${theme==='dark'? 'border-b border-white/8': 'border-b border-white/3'}`}>
                     <div className="max-w-6xl mx-auto flex items-center justify-between px-5 py-3">
+                        {/*logo */}
                         <span className="flex items-center gap-3">
-                            <img src={Logo} alt="Digital Arts Academy MW logo" className="w-10 h-10 rounded-md object-contain ring-2 ring-black/10 bg-white"></img>
+                            <img src={Logo} alt="Digital Arts Academy MW logo" className="size-10 rounded-md object-contain ring-2 ring-black/10 bg-white"></img>
                             <div>
                              <h1 className="text-lg text-primaryText font-bold transition-colors duration-300">Digital Arts Academy <span className="text-sm font-semibold text-slate-500">MW</span></h1>
                              <p className="text-xs text-slate-500 -mt-1">Create • Learn • Shine</p>
