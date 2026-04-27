@@ -22,7 +22,7 @@ export default [
             type: "Beginner"
         },
         tools: "Krita, Photopea, Procreate",
-        pathname:"#sketching"
+        pathname:"#game-development"
     },
     {
         id: 12,
@@ -41,7 +41,7 @@ export default [
             type: "Begnner → Intermediate"
         },
         tools: "Blender, Substance alternatives",
-        pathname:"#modelling"
+        pathname:"#unity-development"
     },
     {
         id: 13,
@@ -60,6 +60,6 @@ export default [
             type: "Intermediate"
         },
         tools: "Godot or Unreal (you choose)",
-        pathname:"#gameDevelopment"
+        pathname:"#gobot-development"
     }
 ]

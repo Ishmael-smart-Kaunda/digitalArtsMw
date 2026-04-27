@@ -1,9 +1,14 @@
-import gameFundamentalsdata from "../assets/courses data/visual development/gameDevFundamentals"
+
+
+
+
+
+import unityGamesData from "../assets/courses data/game development/unity games data"
 import CourseOutline from "../components/course preview/course outline"
 
 
 
-export default function DynamicSketching(){
+export default function UnityGames(){
                                     return(
                                     <div className="relative grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto px-6 min-h-[90vh]">
                                     <aside className="md:sticky top-16 col-span-1 w-full h-[80vh] md:h-[100vh] bg-slate-100 px-2 py-5">
@@ -34,7 +39,7 @@ export default function DynamicSketching(){
                                         <div className="w-full flex flex-col gap-5 py-4">
                                                 
                                                 {       
-                                                    gameFundamentalsdata.map((item)=>{
+                                                    unityGamesData.map((item)=>{
                                                         
                                                         return(   
                                                                 <CourseOutline

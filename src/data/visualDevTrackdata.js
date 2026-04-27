@@ -41,7 +41,7 @@ export default [
             type: "Hands-on"
         },
         tools: "Blender, Substance alternatives",
-        pathname:"#modelling"
+        pathname:"#digital-portrait"
     },
     {
         id: 13,
@@ -60,6 +60,6 @@ export default [
             type: "Project-based"
         },
         tools: "Godot or Unreal (you choose)",
-        pathname:"#gameDevelopment"
+        pathname:"#character-design"
     }
 ]

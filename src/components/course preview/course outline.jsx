@@ -9,15 +9,14 @@ export default function CourseOutline({module, moduleLessons}){
                                                         <h3 className="uppercase text-[16px]">{module}</h3> <HiChevronDown className={`size-6`}/>
                                                     </div>
                                                     <ul className={`opacity-100 h-auto overflow-hidden text-[16px] font-light px-7`}>
+                                                            
                                                             {
-                                                                moduleLessons.map((item)=>{
-                                                                    return(
-                                                                        <li key={item.id}
-                                                                            className="list-[circle] marker:text-red-950 marker:text-[19px]"
-                                                                        >
-                                                                            {item.lesson}
-                                                                        </li>
-                                                                    )
+                                                             moduleLessons.map((item)=>{
+                                                                return(
+                                                                    <li key={item.id} className="list-[circle] marker:text-red-950 marker:text-[19px]">
+                                                                        {item.lesson}
+                                                                    </li>
+                                                                )
                                                                 })
                                                             }
                                                     </ul>
