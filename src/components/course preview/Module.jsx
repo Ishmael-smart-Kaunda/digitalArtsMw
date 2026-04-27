@@ -5,64 +5,46 @@ import { useState } from "react"
 const CourseModule = ({moduleName, moduleID, lesson, practice, project, outcome, isExpanded, onToggle})=>{
                     
                     const [expandedSection, setExpandedSections]=useState({})
-                    const toggleSection =(moduleId, section)=>{
-                            setExpandedSections((prev)=>({
-                                    ...prev,
-                                    [moduleId]:{
-                                    ...prev[moduleId],
-                                    [section]:!prev[moduleId]?.[section]
-                                    },
-                                
-                            }))
-                            console.log("Lesson objet" + lesson)
+
+                            
                     }
                      return(
-                           <article
+                           {/*<article
                                      
-                                    className={`${isExpanded ? 'h-auto':'h-23'} overflow-hidden py-7 
+                                    className={` overflow-hidden py-7 
                                              px-3 text-[20px] text-gray-500 font-semibold  border 
                                              border-gray-300/50 cursor-pointer gap-3 `
                                              }
                                             
                                              >
                                     <div className="flex flex-row justify-between align-center" 
-                                         onClick={onToggle}
+                                        
                                          >
-                                        <h2 className="uppercase text-[16px]">{moduleName}</h2>
+                                        <h2 className="uppercase text-[16px]">Name</h2>
                                         <HiChevronDown  
-                                         className={`${isExpanded ? '-rotate-180':''} bg-zinc-100 size-8 rounded-sm`}
+                                         className={``}
                                         />
                                     </div> 
 
-                                         {/*lesson section / What students will learn */}
+                                         {/*lesson section / What students will learn 
                                     <div className={`${isExpanded ? 'opacity-100':'opacity-0'}`} >
-                                        <span className={`inline-flex gap-2 items-center `} onClick={()=>toggleSection(moduleID, 'lesson')}>
+                                        <span className={`'lesson')`}>
                                             <HiChevronRight 
                                             
-                                            className={`${expandedSection[moduleID]?.lesson ?'rotate-90 text-indigo-800' : ''} rounded-full border`}
+                                            className={`'} rounded-full border`}
                                             />
-                                            {lesson.heading}
+                                            
                                         </span> 
                                             
-                                             {/*a list of learning criteria under lesson section */}
-                                        <ul className={`${expandedSection[moduleID]?.lesson ?'opacity-100 h-auto':'opacity-0 h-1'} overflow-hidden text-[16px] font-light px-7`} >
-                                            {lesson.criteria.map(criterion=>{
-                                                  
-                                                  return(
-                                                         <li 
-                                                            key={criterion.id}
-                                                            className="list-[circle] marker:text-emerald-800 marker:text-[19px]"
-                                                            >
-                                                            {criterion.criterion}
-                                                         </li>
-                                                        )
-                                            })}
+                                             {/*a list of learning criteria under lesson section
+                                        <ul className={`'} overflow-hidden text-[16px] font-light px-7`} >
+                                            
                                         </ul>
 
                                     </div>
 
                                     
-                                    {/*practie section / What students practive */}
+                                    {/*practie section / What students practive 
 
                                     {practice && <div className={`${isExpanded ? 'opacity-100':'opacity-0'}`}>
                                         <span className={`inline-flex gap-2 items-center `} onClick={()=>toggleSection(moduleID, 'practice')}>
@@ -73,7 +55,7 @@ const CourseModule = ({moduleName, moduleID, lesson, practice, project, outcome,
                                             {practice.heading}
                                         </span> 
                                             
-                                             {/*a list of learning criteria under lesson section */}
+                                             {/*a list of learning criteria under lesson section
                                         <ul className={`${expandedSection[moduleID]?.practice ?'opacity-100 h-auto':'opacity-0 h-1'} overflow-hidden text-[16px] font-light px-7`} >
                                             {practice.practices.map(practice=>{
                                                   
@@ -90,40 +72,28 @@ const CourseModule = ({moduleName, moduleID, lesson, practice, project, outcome,
 
                                     </div>}
 
-                                      {/*project section / What students will create */}      
+                                      {/*project section / What students will create      
                                     <div 
-                                        className={`${isExpanded ? 'opacity-100': 'opacity-0'}`}
+                                        className={``}
                                      >
-                                        <span className={`inline-flex gap-2 items-center`} onClick={()=>toggleSection(moduleID, 'project')}>    
+                                        <span className={``}>    
                                             <HiChevronRight
                                               
-                                             className={`${expandedSection[moduleID]?.project ?'rotate-90 text-indigo-800' : ''} rounded-full border`} 
+                                             className={``} 
                                             />
                                             {project.heading}
                                         </span> 
 
-                                        {/*a list of students projects under section */}
-                                        <ul className={`${expandedSection[moduleID]?.project ?'opacity-100 h-auto':'opacity-0 h-1'} overflow-hidden text-sm font-light px-7`} >
-                                            {project.projects.map(project=>{
-                                                  
-                                                  return(
-                                                         <li 
-                                                            key={project.id}
-                                                            className="list-[circle] marker:text-emerald-800 marker:text-[19px]"
-                                                            >
-                                                            {project.project}
-                                                         </li>
-                                                        )
-                                            })}
-                                        </ul>
+                                        {/*a list of students projects under section 
+                     
                                         
                                     </div>
 
-                                    {/*outcome section */}      
+                                    {/*outcome section     
                                     <div 
                                         className={`${isExpanded ? 'opacity-100':'opacity-0'} transition-all duration-500`}
                                      >
-                                        <span className={`inline-flex gap-2 items-center`} onClick={()=>toggleSection(moduleID, 'outcome')}>    
+                                        <span className={}>    
                                             <HiChevronRight 
                                             
                                             className={`${expandedSection[moduleID]?.outcome ?'rotate-90 text-indigo-800' : ''} rounded-full border`} 
@@ -132,24 +102,12 @@ const CourseModule = ({moduleName, moduleID, lesson, practice, project, outcome,
                                             {outcome.heading}
                                         </span> 
                                          
-                                          {/*a list of outcomes under out section */}
-                                          <ul className={`${expandedSection[moduleID]?.outcome ?'opacity-100 h-auto':'opacity-0 h-1'} overflow-hidden text-sm font-light px-7`} >
-                                            {outcome.outcomes.map(outcome=>{
-                                                  
-                                                  return(
-                                                         <li 
-                                                            key={outcome.id}
-                                                           className="list-[circle] marker:text-emerald-800 marker:text-[19px]"
-                                                            >
-                                                            {outcome.outcome}
-                                                         </li>
-                                                        )
-                                            })}
-                                        </ul>
+                                          {/*a list of outcomes under out section *
+                                        
                                     </div>
                                     
-                            </article>
+                            </article>*/}
                     )
-}
+
 
 export default CourseModule

@@ -19,7 +19,7 @@ export default [
         courseName: "3D Modelling (Blender)",
         courseDesc: "Model, texture and light simple assets. Build portfolio-ready 3D work.",
         duration: 6,
-        pathname:'#modelling'
+        pathname:'#sketching'
     },
     {
         id: 3,
@@ -28,6 +28,6 @@ export default [
         courseName: "Game Development (Godot / Unreal)",
         courseDesc: "Learn to bring assets to life — simple mechanics, levels, and publishing a mini-game.",
         duration: 8,
-        pathname:'#gameDevelopment'
+        pathname:'#sketching'
     }
 ]

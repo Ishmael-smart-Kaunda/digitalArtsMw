@@ -1,6 +1,6 @@
 import courseData from '../data/Coursesdata.js'
-import Courses from '../components/home_components/Courses'
-import Showcase from '../components/home_components/Showcase.jsx'
+import Courses from '../components/home page/home_components/Courses.jsx'
+import Showcase from '../components/home page/home_components/Showcase.jsx'
 import Showcasedata from '../data/Showcasedata.js'
 import Footer from '../components/Footer.jsx'
 

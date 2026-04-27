@@ -1,0 +1,65 @@
+
+import digitalArts from "../assets/courseimages/DigitalArt.jpeg"
+import threeDArt from "../assets/courseimages/3DArt.png"
+import gameDev from "../assets/courseimages/GameDev.jpg"
+
+
+export default [
+    {
+        id: 11,
+        courseImg: digitalArts,
+        title: "Introduction to Blender",
+        info: {
+            description: "Learn Blender basics from interface navigation to rendering, with weekly feedback and a final cube animation.",
+            takeAways: {
+                takeAway1: "Hands on projects",
+                takeAway2: "Expert instructions",
+                takeAway3: "Certificate on completion"
+            }
+        },
+        bagdes: {
+            duration: 6,
+            type: "Beginner"
+        },
+        tools: "Krita, Photopea, Procreate",
+        pathname:"#sketching"
+    },
+    {
+        id: 12,
+        courseImg: threeDArt,
+        title: "Cinematic Product Branding & Commercial VFX",
+        info: {
+            description: "Industry-facing course on high-end product visualisation, studio lighting, complex surface, and commercial workflows.",
+            takeAways: {
+                takeAway1: "Hands-on projects",
+                takeAway2: "Expert instructions",
+                takeAway3: "Certificate on completion"
+            }
+        },
+        bagdes: {
+            duration: 8,
+            type: "Intermediate - Advanced"
+        },
+        tools: "Blender, Substance alternatives",
+        pathname:"#modelling"
+    },
+    {
+        id: 13,
+        courseImg: gameDev,
+        title: "Introduction to 3D Game Art Workflow & Asset Creation",
+        info: {
+            description: "Translate concept art into game-ready, 3D assets using stylized workflows, UV unwrapping, texturing, and Unity integration.",
+            takeAways: {
+                takeAway1: "Hands-on projects",
+                takeAway2: "Expert instruction",
+                takeAway3: "Certificate on completion"
+            }
+        },
+        bagdes: {
+            duration: "8",
+            type: "Beginner - Intermediate"
+        },
+        tools: "Godot or Unreal (you choose)",
+        pathname:"#gameDevelopment"
+    }
+]

@@ -1,15 +1,18 @@
-import coursePreviewdata from "../data/course previewdata"
+{/*import coursePreviewdata from "../data/course previewdata"
 
 import CoursePreview from "../components/course preview/course preview"
+import CTA from "../components/course preview/CTA"*/}
+
 import Footer from "../components/Footer"
 
 
 export default function Modelling(){
-                  const course="3d modelling"
-                        const program=coursePreviewdata.find((element)=>element.courseName===course)
+                 {/* const course="3d modelling"
+                        const program=coursePreviewdata.find((element)=>element.courseName===course)*/}
                   return(
                         <> 
-                          <CoursePreview data={program}/>
+                         {/* <CoursePreview data={program}/>
+                          <CTA/>*/}
                           <Footer/>
                         </>
       )

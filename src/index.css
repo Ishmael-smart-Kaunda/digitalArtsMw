@@ -23,11 +23,12 @@
        --color-inputBg:var(--inputBg);
 
        --color-specialText3: var(--text5);
-       --color-specialText4: var(--text6);    
+       --color-specialText4: var(--text6);      
+       
 }
 
 :root{
-     --background1:#ffffff99;
+     --background1:#f1ebeb;
      --background2:#fff;
 
      --background4:rgba(238, 242, 255, 1);
@@ -35,8 +36,6 @@
      --background6:rgba(236, 253, 245, 1);
      --background7:#eef2ff;
      
-
-
      --text1:#35373b;
      --text2:#747a81;
      --text3:#7d7e80de;
@@ -83,11 +82,60 @@ body{
 *{
     transition: all 0.3s;
 }
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 .scrollbar-thin::-webkit-scrollbar{
-    height: 1px;
+    height: 1px;  
+}
+
+
+@theme { 
+    --animate-slide: slide 2s ease-in-out forwards;
+    @keyframes slide {
+        0%{
+            transform: translateX(-5px);
+            z-index:;
+            opacity:100%;
+        }
+        50%{
+             z-index:;
+             opacity:50%;
+             
+        }
+        100%{
+            transform:translateX(500px);
+             z-index:;
+             opacity:0;
+             display: none;
+        }
+
+    }
     
 }
+@theme{
+     --animate-left: slideL 2s ease-in-out forwards;
+    @keyframes slideL {
+        0%{
+            transform: translateX(-3px);
+            z-index:;
+            opacity:10%;
+        }
+        
+        50%{
+             z-index:;
+             opacity:50%;
+             
+        }
+        100%{
+            
+             transform:translateX(0);
+             z-index:;
+             opacity:100%;
+
+        }
+
+    }
+    
+}
+
+

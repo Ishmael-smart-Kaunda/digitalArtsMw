@@ -19,7 +19,7 @@ export default function Outcome({outcomes}){
             }, []);
 
        return(
-              <section className="w-full h-70 rounded-lg shadow-gray-300 shadow-md pt-15 px-4">
+             {/* <section className="w-full h-70 rounded-lg shadow-gray-300 shadow-md pt-15 px-4">
                 <h1 className="font-bold py-3">Program Outcomes</h1>
                 <div 
                     ref={containerRef}
@@ -27,7 +27,7 @@ export default function Outcome({outcomes}){
                         
                         {outcomes.map((item)=>{
                                 return(
-                                <div className="bg-slate-900 h-40 min-w-1/2 rounded-lg p-4 text-white
+                                <div className="bg-slate-900 h-40 min-w-full md:min-w-1/2 rounded-lg p-4 text-white
                                      key={item.id}
                                 ">
                                     <h2 className="text-lg">{item.outcome}</h2>
@@ -36,6 +36,6 @@ export default function Outcome({outcomes}){
                         }
 
                 </div>
-              </section>
+              </section>*/}
        )
 }

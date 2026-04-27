@@ -21,10 +21,10 @@ export default function CoursePreview({data}){
             
            
             return(
-                    <div className="relative grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto px-6 min-h-[90vh]">
+                    {/*<div className="relative grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto px-6 min-h-[90vh]">
                         <aside className="md:sticky top-16 col-span-1 w-full h-[80vh] md:h-[100vh] bg-slate-100 px-2 py-5">
                             <div className="w-full h-[40%] bg-gray-50 rounded-sm px-2">
-                               {/*<img src={gameImg} className="w-full h-full object-cover" alt=""/>*/}
+                               {/*<img src={gameImg} className="w-full h-full object-cover" alt=""/>
                               <video controls autoPlay muted loop     
                                     className="pointer-events-none w-full  mx-auto h-full object-cover rounded-sm"
                                     > 
@@ -50,10 +50,10 @@ export default function CoursePreview({data}){
                         </aside>
 
                         <div className="md:col-span-2 py-5 md:py-18">
-                            <h1 className=" text-2xl font-bold uppercase">{data.courseName} {/*Game Development*/}</h1>
+                            <h1 className=" text-2xl font-bold uppercase">{data.courseName} {/*Game Development</h1>
                             <p className=" text-justify mx-auto font-normal py-5"> 
                                     {data.description}
-                                    {/* */}
+                                    {/* *
                             </p>
                             <h3 className="font-semibold text-primaryText text-[17px]">Course Overview</h3>
                            
@@ -75,9 +75,9 @@ export default function CoursePreview({data}){
                                     })}
                             </div>
                            
-                            {/* program outcome section */}
+                            {/* program outcome section 
                             <Outcome outcomes={data.outcomes}/>
                         </div>
-                    </div>
+                    </div> */}
               )
 }

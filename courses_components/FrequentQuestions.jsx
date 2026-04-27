@@ -1,6 +1,4 @@
-
 import Questions from "./common_questions"
-
 import questionsData from "../../data/questions-data"
 
 export default function FAQuestions(){
@@ -21,7 +19,7 @@ export default function FAQuestions(){
                        </div>
 
                        <div className="mt-6 grid md:grid-cols-2 gap-4 text-sm text-slate-700">
-                     {commonQuestions}
+                         {commonQuestions}
                      </div>
                   </div>
                 </section>
